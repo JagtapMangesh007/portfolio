@@ -12,7 +12,7 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="texl-xl">Softwere Developer</span>
             <h1 className="h1 mb-6">
-              Hello I'm<br/> <span className="text-accent">Mangesh...</span>
+              Hello I am<br/> <span className="text-accent">Mangesh...</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               An accomplished software developer known for delivering high-performance and user-centric solutions. My dedication to crafting efficient 
