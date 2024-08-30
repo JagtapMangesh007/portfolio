@@ -1,9 +1,10 @@
 "use client";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
-import {CiMenuFries} from "react-icons/ci"
+import {CiMenuFries} from "react-icons/ci";
+import {useState} from "react";
 
 const links = [
     {
@@ -30,16 +31,24 @@ const links = [
 
 const MobileNav = () => {
     const pathname = usePathname();
+    const router = useRouter();
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleSheet = () => setIsOpen(!isOpen);
+    const closeSheet = () => setIsOpen(false);
+    const handleLinkClick = (path) => {
+        closeSheet(); // Close the sheet
+        router.push(path); // Navigate to the selected path
+      };
     return (
-        <Sheet>
-            <SheetTrigger className="flex justify-center items-center">
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger className="flex justify-center items-center" onClick={toggleSheet}>
                 <CiMenuFries className="text-[32px] text-accent"/>
             </SheetTrigger>
             <SheetContent className="flex flex-col">
                 <div className="mt-20 mb-20 text-center text-2xl">
                     <Link href="/">
-                        <h1 className="text-4xl font-semibold">
-                            Jagtap<span className="text-accent">.</span>
+                        <h1 className="text-6xl font-semibold">
+                            J<span className="text-accent">W</span>S
                         </h1>
                     </Link>
                 </div>
@@ -52,6 +61,7 @@ const MobileNav = () => {
                             className={`${link.path === pathname &&
                             "text-accent border-b-2 border-accent"
                         } text-xl capitalize hover:text-accent transition-all`}
+                        onClick={() => handleLinkClick(link.path)}
                         >
                             {link.name}
                         </Link>

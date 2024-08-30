@@ -10,17 +10,17 @@ const info = [
     {
         icon: <FaPhoneAlt/>,
         title: 'Phone',
-        description: '(+91) 111 111 111',
+        description: '(+91) 8668653243',
     },
     {
         icon: <FaEnvelope/>,
         title: 'Email',
-        description: '(+91) 111 111 111',
+        description: 'jagtapmangesh007.com',
     },
     {
         icon: <FaMapMarkedAlt/>,
         title: 'Address',
-        description: '(+91) 111 111 111',
+        description: 'Pune, MH, India',
     },
 ]
 import { motion } from "framer-motion";
@@ -40,7 +40,7 @@ const Contact = () => {
                     <div className="xl:h-[54%] order-2 xl:order-none">
                         <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
                             <h3 className="text-4xl text-accent">Lets work together</h3>
-                            <p className="text-white/60">her is paragrop</p>
+                            <p className="text-white/60">"Ready to bring your ideas to life? Let's collaborate and create something amazing together. Fill out the form below, and let's start building your next big project!"</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <Input type="firstname" placeholder="Firstname" />
                                 <Input type="lastname" placeholder="Lastname" />
@@ -55,7 +55,7 @@ const Contact = () => {
                                 <SelectGroup>
                                     <SelectLabel>Select a service</SelectLabel>
                                     <SelectItem value="est">Web devlopment</SelectItem>
-                                    <SelectItem value="cst">Web devlopment</SelectItem>
+                                    <SelectItem value="cst">Web Maintainance</SelectItem>
                                 </SelectGroup>
                             </SelectContent>
                           </Select>

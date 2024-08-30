@@ -12,20 +12,20 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
     {
         num: "1",
-        category: "Frowntent",
+        category: "Microsoft clone",
         title: "Project1",
-        description: "here is description",
-        stack: [{name: "html 5"}, {name: "css"}, {name: "js"}],
+        description: "Microsoft clone using telwind_CSS",
+        stack: [{name: "NA"}, {name: "NA"}, {name: "NA"}],
         // image: "/assects/work/image",
         live: "",
         github: ""
     },
     {
         num: "2",
-        category: "Frowntent",
+        category: "React JS",
         title: "Project1",
-        description: "here is description",
-        stack: [{name: "html 5"}, {name: "css"}, {name: "js"}],
+        description: "React js Practice Project",
+        stack: [{name: "NA"}, {name: "NA"}, {name: "NA"}],
         // image: "/assects/work/image",
         live: "",
         github: ""
@@ -53,7 +53,7 @@ const Work = () => {
                             <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                                 {project.num}
                             </div>
-                            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} project</h2>
+                            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category}</h2>
                             <p className="text-white/60">{project.description}</p>
                             <ul className="flex gap-4">
                                 {project.stack.map((item, index) => {

@@ -16,7 +16,7 @@ const stats = [
     },
     {
         num: 3,
-        text: "Number of Clients Served:"
+        text: "Number of Clients Served"
     },
 ]
 const Stats = () => {
