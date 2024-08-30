@@ -40,7 +40,11 @@ const Contact = () => {
                     <div className="xl:h-[54%] order-2 xl:order-none">
                         <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
                             <h3 className="text-4xl text-accent">Lets work together</h3>
-                            <p className="text-white/60">"Ready to bring your ideas to life? Let's collaborate and create something amazing together. Fill out the form below, and let's start building your next big project!"</p>
+                            <p className="text-white/60">
+                &quot;Ready to bring your ideas to life? Let&apos;s collaborate
+                and create something amazing together. Fill out the form below,
+                and let&apos;s start building your next big project!&quot;
+              </p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <Input type="firstname" placeholder="Firstname" />
                                 <Input type="lastname" placeholder="Lastname" />
