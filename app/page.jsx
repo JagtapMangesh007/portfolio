@@ -26,8 +26,9 @@ const Home = () => {
               Hi I am<br/> <span className="text-accent">Mangesh</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              "A Software Developer specializing in React.js. I build high-performance, user-centric web applications and websites. Lets collaborate to turn your vision into reality!" 
-            </p>
+  &quot;A Software Developer specializing in React.js. I build high-performance, user-centric web applications and websites. Let&rsquo;s collaborate to turn your vision into reality!&quot;
+</p>
+
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
                 variant="outline"
