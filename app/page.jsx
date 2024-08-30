@@ -1,10 +1,21 @@
+"use client";
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import {FiDownload} from "react-icons/fi";
 
+
+
 const Home = () => {
+  const handleDownload = () => {
+    const fileUrl = "/cv/cv.pdf";
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "Mangesh_CV.pdf"; 
+    link.click();
+  };
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -12,16 +23,17 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="texl-xl">Softwere Developer</span>
             <h1 className="h1 mb-6">
-              Hello I am<br/> <span className="text-accent">Mangesh...</span>
+              Hi I am<br/> <span className="text-accent">Mangesh</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              An accomplished software developer known for delivering high-performance and user-centric solutions. My dedication to crafting efficient 
+              "A Software Developer specializing in React.js. I build high-performance, user-centric web applications and websites. Let’s collaborate to turn your vision into reality!" 
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownload}
               >
                 <span>Download CV</span>
                 <FiDownload className="texl-xl"/>

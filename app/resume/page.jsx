@@ -1,41 +1,60 @@
 "use client";
-import { FaHtml5, FaCss3,FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si"
+import { FaHtml5, FaCss3,FaJs, FaReact, FaNodeJs, FaPaperPlane, FaGitAlt, FaGithubSquare, FaWordpress } from "react-icons/fa";
+import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
+import { SiWebpack, SiNetlify, SiJavascript   } from "react-icons/si";
+import { IoLogoVercel } from "react-icons/io5";
+import { TbBrandBootstrap, TbBrandReactNative } from "react-icons/tb";
 
 const about = {
     title: "About Me",
     description:
-        "her  is description",
+        "A Meticulous Developer, skilled ate building user interface components using the React, next and More An excellent listener, with the ability to assess and help in tough situations",
     info: [
         {
-            feildName: "Mobile",
-            fieldValue: "Mangesh Ja2gtap"
-        },
-        {
             feildName: "Name",
-            fieldValue: "Mangeshw Jagtap"
+            fieldValue: "Mangesh Jagtap"
         },
         {
-            feildName: "email",
-            fieldValue: "Mangesh Jawgtap"
+            feildName: "Mobile",
+            fieldValue: "(+91) 8668653243"
+        },
+        {
+            feildName: "Location",
+            fieldValue: "Pune"
+        },
+        {
+            feildName: "Freelancer",
+            fieldValue: "Available"
+        },
+        {
+            feildName: "DOB",
+            fieldValue: "2nd June"
+        },
+        {
+            feildName: "Status",
+            fieldValue: "Unmarried"
+        },
+        {
+            feildName: "Mail",
+            fieldValue: "jagtapmangesh007@gmail.com"
         },
     ]
 };
 const experience = {
-    // icon: '/assets/resume/.svg'
-    title: "My exper",
+    // icon: 'logo',
+    title: "My Experience",
     description:
-        "hier is des",
+        "As a skilled software developer, I have substantial experience in creating dynamic and high-performance web applications, delivering innovative solutions tailored to meet diverse client needs.",
     items: [
         {
-            company: "name",
-            position: "devloper",
-            duration: "2022",
+            company: "KPMG Assurance and Consultion Services LLP",
+            position: "Business Analyst",
+            duration: "2022 - 2023",
         },
         {
-            company: "name",
-            position: "devloper",
-            duration: "2022",
+            company: "Megsys Digital Private Limited",
+            position: "React Developer",
+            duration: "Present",
         },
     ]
 };
@@ -43,42 +62,86 @@ const education = {
     // icon: '/assets/resume/.svg'
     title: "My Education",
     description:
-        "hier is des",
+        "Graduated with a Bachelor’s in Computer Applications, equipping with a thorough understanding of programming concepts, application development, and computer systems.",
     items: [
         {
-            institution: "name",
-            degree: "devloper",
-            duration: "2022",
+            institution: "Savitribai Phule Pune University",
+            degree: "BBA (Computer Application)",
+            duration: "2021",
         },
         {
-            institution: "name",
-            degree: "devloper",
-            duration: "2022",
+            institution: "Kolhapur Divisional Board",
+            degree: "Higher Secondary Certificate",
+            duration: "2015",
         },
         {
-            institution: "name",
-            degree: "devloper",
-            duration: "2022",
+            institution: "Kolhapur Divisional Board",
+            degree: "Secondary School Certificate",
+            duration: "2013",
         },
         
     ]
 };
 const skills = {
-    title: "skill",
+    title: "Skill",
     description:
-    "here is description",
+    "Extensive skill set in various technologies, enabling the development and optimization of effective web solutions. This diverse expertise supports the creation of innovative.",
     skillList : [
         {
-            icon: <FaHtml5/>,
-            name: "htmls"
+            icon: <FaReact />,
+            name: "React.js"
         },
         {
-            icon: <FaHtml5/>,
-            name: "htmls"
+            icon: <FaPaperPlane  />,
+            name: "Postman"
         },
         {
-            icon: <FaHtml5/>,
-            name: "htmls"
+            icon: <RiTailwindCssFill />,
+            name: "Telwind CSS"
+        },
+        {
+            icon: <SiWebpack/>,
+            name: "Webpack"
+        },
+        {
+            icon: <FaGitAlt />,
+            name: "Git"
+        },
+        {
+            icon: <FaGithubSquare />,
+            name: "GitHub"
+        },
+        {
+            icon: <FaWordpress />,
+            name: "WordPress"
+        },
+        {
+            icon: <RiNextjsFill />,
+            name: "Next.js"
+        },
+        {
+            icon: <SiNetlify />,
+            name: "netlify"
+        },
+        {
+            icon: <IoLogoVercel  />,
+            name: "Vercel"
+        },
+        {
+            icon: <FaHtml5 />,
+            name: "HTML"
+        },
+        {
+            icon: <FaCss3 />,
+            name: "CSS"
+        },
+        {
+            icon: <SiJavascript />,
+            name: "Javascript"
+        },
+        {
+            icon: <TbBrandReactNative />,
+            name: "React Native"
         },
     ],
 };
@@ -151,7 +214,7 @@ const Resume = () => {
                                         return (
                                             <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start">
                                                 <span className="text-accent">{item.degree}</span>
-                                                <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                                                <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.duration}</h3>
                                                 <div className="flex items-center gap-3">
                                                     <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                                                     <p className="text-white/60">{item.institution}</p>
@@ -166,7 +229,7 @@ const Resume = () => {
                         <TabsContent value="skills" className="w-full h-full">
                             <div className="flex flex-col gap-[30px]">
                                     <div className="flex flex-col gap-[30] text-center xl:text-left">
-                                        <h3 className="text-4xl font-bold">{skills.title}</h3>
+                                        <h3 className="text-4xl font-bold mb-6">{skills.title}</h3>
                                         <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                                     </div>
                                     <ul className="grid grid-col-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">

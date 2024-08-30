@@ -4,27 +4,27 @@ import {BsArrowDown, BsArrowDownRight, bsArrowDownRight} from "react-icons/bs";
 
 const services = [
     {
-        num: '011',
-        title: '1Web Development',
-        description: 'H1ere is description',
+        num: '01',
+        title: 'Web Development',
+        description: 'Building tailored websites and web applications to meet specific client needs using technologies like React.js, Next.js.',
         href: ""
     },
     {
-        num: '021',
-        title: 'W2eb Development',
-        description: 'He2re is description',
+        num: '02',
+        title: 'Website Maintenance',
+        description: 'Providing ongoing support and maintenance for existing websites to ensure they remain up-to-date and functional.',
         href: ""
     },
     {
-        num: '013',
-        title: 'W3eb Development',
-        description: 'H3ere is description',
+        num: '03',
+        title: 'E-commerce Integration',
+        description: 'Unlock the full potential of your website with our specialized WordPress development services. Whether you are starting from scratch.',
         href: ""
     },
     {
-        num: '014',
-        title: 'W4eb Development',
-        description: 'H4ere is description',
+        num: '04',
+        title: 'Consultation',
+        description: 'Offering expert advice on digital strategy, technology selection, and project planning to help clients achieve their business goals.',
         href: ""
     }
 ]
